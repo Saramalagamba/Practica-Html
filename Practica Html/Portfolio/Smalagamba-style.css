@@ -1,0 +1,333 @@
+*:where( :not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
+
+    all: unset;
+
+    display: revert;
+
+}
+
+:root {
+    --height-size-box: var(--height-size-box);
+}
+
+li {
+
+    list-style-type: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(241, 245, 247, 0.747);
+    font-family: Century;
+    width: 1600px;
+    font-size: 17px;
+
+}
+
+.header-layout {
+    display: flex;
+    border-radius: 30px;
+    height: 500px;
+    width: 1872px;
+    background-color: rgb(37, 50, 77);
+    align-items: center;
+    padding-left: 150px;
+    -webkit-box-shadow: 9px 22px 34px 12px rgba(78, 212, 212, 1);
+    -moz-box-shadow: 9px 22px 34px 12px rgba(78, 212, 212, 1);
+    box-shadow: 9px 22px 34px 12px rgba(78, 212, 212, 1);
+    font-size: 20px;
+    color: rgb(245, 241, 236);
+
+}
+
+
+.header-layout:hover {
+    filter: saturate(150%);
+}
+
+
+
+.principal-photo img {
+    border-radius: 10px;
+    width: 126px;
+    height: 300px;
+    -webkit-box-shadow: 9px 22px 34px 12px rgb(197, 238, 238);
+    -moz-box-shadow: 9px 22px 34px 12px rgb(181, 223, 223);
+    box-shadow: 9px 22px 34px 12px rgb(193, 245, 245);
+}
+
+.codespace{
+    width: 60px;
+}
+
+
+
+& h1 {
+    font-size: 30px;
+    padding-bottom: 10px;
+    text-shadow: 1px 2px rgb(125, 172, 211);
+    font-family: 'Trebuchet MS', sans-serif;
+    font-style: italic;
+}
+
+& h1:hover {
+    text-align: center;
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+    cursor: pointer;
+    color: rgb(14, 68, 85);
+}
+
+
+
+
+.principal-data {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 20px;
+    margin-left: 50px;
+    width: 600px;
+}
+
+& a{
+cursor: pointer;
+font-weight: bold;
+font-style: italic;
+color:rgb(207, 147, 67);
+font-size: 20px;
+}
+
+.social-network-list{
+    display: flex;
+    gap: 10px;
+    margin-left: 500px;
+    
+
+    .list-twitter{
+        fill: rgb(108, 109, 109);
+    }
+}
+
+
+.another-information {
+
+
+    .article-all-information {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px;
+        gap: 20px;
+        margin: 100px;
+        width: 1200px;
+        border: 1px solid black;
+        -webkit-box-shadow: 0 10px 6px -6px #777;
+        -moz-box-shadow: 0 10px 6px -6px #777;
+        box-shadow: 0 10px 6px -6px #777;
+        background-color: rgb(228, 241, 241);
+        justify-content: center;
+        overflow: hidden;
+        height: 50px;
+        position: relative;
+        align-items: start;
+        transition: all;
+        transition-duration: 2.5s;
+        transition-delay: 0.2s;
+        cursor: pointer;
+
+        & h2 {
+            align-items: start;
+        }
+
+        & time {
+            color: rgb(80, 57, 163);
+            font-weight: bold;
+        }
+
+        & h2 {
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 20px;
+            text-shadow: 1px 2px grey;
+            font-family: 'Trebuchet MS', sans-serif;
+            font-style: italic;
+            color: rgb(56, 56, 143);
+        }
+        .Anovo {
+            width: 80px;
+        }
+    }
+
+    .efect-hidden{
+        position: absolute;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+        gap: 20px;
+
+    }
+    .about-me {
+        --height-size-box: 400px;
+        margin-left: 400px;        
+    }
+
+    .profesional-information {
+        --height-size-box: 700px;
+        margin-right: 500px;
+        & svg {
+            padding-top: 10px;
+        }
+    }
+
+    .study-information {
+        margin-left: 500px;
+        --height-size-box: 750px;
+    }
+
+    .another-profesional-information {
+        --height-size-box: 900px;
+        margin-left: 200px;
+    }
+
+    .skill-information {
+        --height-size-box: 350px;
+        margin-left: 600px;
+    }
+
+    .article-all-information:hover {
+        position: relative;
+        height: var(--height-size-box);
+
+    }
+
+  
+
+}
+
+
+
+
+.grid-another-data {
+
+    width: 1850px;
+    max-inline-size: 1870px;
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 150px);
+    grid-template-rows: 200 px repeat(4, 100px) 200px;
+    gap: 60px;
+    justify-content: center;
+    background-color: rgb(20, 20, 46);
+    position: relative;
+    padding-bottom: 100px;
+
+    .article-all-hobbie {
+        border-radius: 5% 10% 15% 20%;
+        background-color: rgb(231, 222, 210);
+        border-width: 3px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 30px;
+        color: rgb(5, 6, 7);
+    }
+
+    .article-all-hobbie:hover{
+        transition: all .5s ease-in-out;
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
+    }
+
+    
+    .photo-paddel {
+        border-color: rgb(158, 125, 15);
+        background-image: url(/Portfolio/Photos/padel.jpg);
+        grid-row: 1 / 3;
+        grid-column: 1 / 3;
+        background-size: cover;
+        color: rgb(48, 68, 85);
+
+        & svg {
+            fill: rgb(180, 117, 34);
+        }
+
+    }
+
+
+
+
+    .photo-family {
+        background-image: url(/Portfolio/Photos/Familia.jpg);
+        grid-row: 3 / 5;
+        grid-column: 1 / 2;
+        border-color: rgb(158, 125, 15);
+        background-size: cover;
+    }
+
+    .photo-malaga {
+        border-color: rgb(196, 149, 49);
+        background-image: url(/Portfolio/Photos/malaga.jpg);
+        grid-row: 1 / 2;
+        grid-column: 3 / 5;
+        color: aliceblue;
+        background-size: cover;
+    }
+
+    .photo-mar {
+        background-image: url(/Portfolio/Photos/mirando-al-mar.jpg);
+        grid-row: 2 / 5;
+        grid-column: 3 / 4;
+        border-color: rgb(158, 125, 15);
+        background-size: cover;
+    }
+
+    .photo-barquitos {
+        border-color: rgb(204, 126, 37);
+        background-image: url(/Portfolio/Photos/barquitos.jpg);
+        grid-column: 4 / 5;
+        grid-row: 2 / 3;
+        background-size: cover;
+        color: aliceblue;
+    }
+
+    .photo-granada {
+        background-image: url(/Portfolio/Photos/Granada.jpg);
+        grid-row: 3 / 5;
+        grid-column: 4 / 5;
+        border-color: rgb(158, 125, 15);
+        background-size: cover;
+    }
+
+    .photo-hotel {
+        border-color: rgb(187, 105, 38);
+        background-image: url(/Portfolio/Photos/hotel.jpg);
+        background-size: cover;
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+        color: aliceblue;
+    }
+
+
+    & h2 {
+        font-family: 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: rgb(228, 168, 89);
+        position: absolute;
+        font-size: 50px;
+        top: 200px;
+        left: 100px;
+    }
+
+    .social-network{
+        position: absolute;
+        right: 200px;
+        top: 200px;
+    }
+}

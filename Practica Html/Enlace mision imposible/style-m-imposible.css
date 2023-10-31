@@ -1,0 +1,244 @@
+*:where( :not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
+
+    all: unset;
+
+    display: revert;
+
+}
+
+li {
+
+    list-style-type: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.background-image-header {
+    margin-top: 10px;
+    margin-left: 5px;
+    width: 1850px;
+    height: 600px;
+    background-image: linear-gradient(0deg, rgba(255, 253, 253, 0.8) 0%, rgba(243, 236, 236, 0.8) 100%), url("/Enlace mision imposible/Photos/caratula-mision-imposible.png");
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+
+    .header-film {
+        gap: 60px;
+        display: flex;
+        color: rgb(8, 8, 8);
+        display: flex;
+        left: 0;
+        border-color: aliceblue;
+        border: 10px;
+        box-shadow: 2px 2px 2px 2px gray;
+        border-style: hidden;
+        align-items: start;
+        height: 600px;
+    }
+
+    .logo-film {
+        height: 180px;
+        width: 500px;
+
+    }
+
+
+    .front-header {
+        margin-top: 100px;
+        background-color: aliceblue;
+        height: 446px;
+        width: 295px;
+        border-color: aliceblue;
+        border: 10px;
+        box-shadow: 10px 10px 10px 10px gray;
+        border-radius: 1% 1% 1% 1%;
+
+    }
+
+    .texts-header {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        margin-top: 20px;
+    }
+
+    & h1 {
+        font-size: 30px;
+        color: rgb(248, 12, 12);
+        font-weight: bold;
+        text-align: center;
+    }
+
+    & h2 {
+        text-transform: uppercase;
+        font-weight: bold;
+        text-decoration: underline;
+        font-size: 25px;
+    }
+
+
+    .front-img {
+        border-radius: 1% 1% 1% 1%;
+    }
+
+    .film-data {
+        font-weight: bolder;
+    }
+
+    .ul-score-film {
+        display: flex;
+    }
+
+    & svg {
+        fill: rgb(226, 25, 25);
+    }
+
+    .star-svg5 svg {
+        fill: black;
+    }
+
+    .score-film {
+        display: flex;
+        gap: 30px;
+        font-weight: bold;
+        align-items: center;
+    }
+
+    & button {
+        cursor: pointer;
+    }
+    & button:hover .svg-star{
+        border-radius: 50%;
+        fill: rgb(182, 53, 75);
+        transition-duration: 0.5s;
+
+    }
+    .button-wacht{
+        width: 24px;
+        height: 24px;
+    }
+    .button-wacht:hover svg{
+         border-radius: 50%;
+         box-shadow: 0px 0px 3px 3px rgb(199, 63, 54);
+         fill: rgb(182, 53, 75);
+         transition-duration: 1s;
+    }
+
+    
+    .jump-img {
+        margin-top: 100px;
+        margin-right: 50px;
+        border-radius: 50%;
+        box-shadow: 0px 0px 15px 15px rgb(199, 63, 54);
+        height: 300px;
+    }
+
+    .jump-img:hover {
+        transition: all 2s ease-in-out;
+        transition-delay: 0.2s;
+        transform: rotate(720deg);
+    }
+}
+
+
+.background-cast-film {
+    background-color: rgb(199, 63, 54);
+    padding-bottom: 100px;
+
+    & h2 {
+        font-size: 30px;
+        text-transform: uppercase;
+        text-align: center;
+        padding-top: 50px;
+        font-weight: bold;
+        color: rgb(77, 36, 36);
+    }
+
+    & p {
+        color: rgb(77, 36, 36);
+    }
+
+
+    .cast-photos {
+        display: flex;
+        height: 500px;
+        align-items: center;
+        justify-content: center;
+
+        .actors-cast-film {
+            display: flex;
+            height: 300px;
+            width: 200px;
+            background-size: cover;
+            cursor: pointer;
+        }
+
+        .actors-cast-film:hover {
+            transition: all .5s ease-in-out;
+            -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+        }
+
+        .contenedor {
+            overflow: hidden;
+        }
+    }
+}
+
+.another-cast-film {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+
+
+    & h3 {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 20px;
+        margin-bottom: 10px;
+        color: rgb(77, 36, 36);
+    }
+
+    .article-data-film {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;
+    }
+}
+
+
+
+.background-banner {
+    height: 350px;
+    position: relative;
+
+    & img {
+        background-image: cover;
+        width: 1857px;
+        background-position: center;
+    }
+
+    .lista {
+        display: flex;
+        position: absolute;
+        gap: 10px;
+        bottom: 10px;
+        left: 10px;
+        align-items: center;
+        font-weight: bold;
+    }
+
+    & li{
+        cursor: pointer;
+    }
+}

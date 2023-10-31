@@ -1,0 +1,165 @@
+*:where( :not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
+
+    all: unset;
+
+    display: revert;
+
+}
+
+:root {
+    --font-size-last: var(--font-size-last);
+}
+
+li {
+
+    list-style-type: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(94, 73, 46);
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    width: 1600px;
+    font-size: 17px;
+
+}
+
+.header-layout {
+    display: flex;
+    border-radius: 10px;
+    height: 500px;
+    width: 1872px;
+    background-color: rgb(197, 163, 119);
+    background-image: linear-gradient(0deg, rgba(197, 117, 12, 0.74) 0%, rgba(153, 137, 100, 0.3) 100%), url(/Portfolio/Photos/Granada.jpg);
+    background-size: cover;
+    align-items: center;
+    padding-left: 50px;
+    cursor: pointer;
+
+
+    .principal-photo img {
+        border-radius: 10px;
+        width: 126px;
+        height: 300px;        
+    }
+
+    & h1 {
+        font-size: 30px;
+        padding-bottom: 10px;
+        text-shadow: 1px 2px grey;
+    }
+
+    .principal-data {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin-top: 20px;
+        margin-left: 50px;
+    }
+}
+
+.grid-another-data {
+
+    width: 1870px;
+    max-inline-size: 1870px;
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 350px);
+    grid-template-rows: 500 px repeat(3, 300px) 200px;
+    gap: 60px;
+    justify-content: center;
+
+    .article-all-data {
+        border-radius: 5% 10% 15% 20%;
+        background-color: rgb(231, 222, 210);
+        border-width: 5px;
+        border-style: double;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 30px;
+        color: rgb(5, 6, 7);
+    }
+
+    .profesional-data {
+        border-color: rgb(158, 125, 15);
+        background-image: linear-gradient(0deg, rgba(223, 160, 71, 0.74) 0%, rgba(153, 137, 100, 0.3) 100%);
+        grid-row: 1 / 3;
+        grid-column: 1 / 3;
+        background-size: cover;
+        color: rgb(48, 68, 85);
+
+        & svg {
+            fill: rgb(180, 117, 34);
+        }
+        
+    }
+
+    .photo-castillo{
+        background-image: linear-gradient(0deg, rgba(197, 117, 12, 0.74) 0%, rgba(153, 137, 100, 0.3) 100%), url(/Portfolio/Photos/castillo.jpg);
+        grid-row: 3 / 4;
+        grid-column: 1 / 2;
+        border-color: rgb(158, 125, 15);
+        background-size: cover;
+    }
+
+    .study-data {
+        border-color: rgb(196, 149, 49);
+        background-image: linear-gradient(0deg, rgba(197, 117, 12, 0.74) 0%, rgba(153, 137, 100, 0.3) 100%);
+        grid-row: 1 / 2;
+        grid-column: 3 / 5;
+        color: aliceblue;
+        background-size: cover;
+    }
+
+    .photo-mar{
+        background-image: linear-gradient(0deg, rgba(197, 117, 12, 0.304) 0%, rgba(153, 130, 100, 0.1) 100%), url(/Portfolio/Photos/mirando-al-mar.jpg);
+        grid-row: 2 / 3;
+        grid-column: 3 / 4;
+        border-color: rgb(158, 125, 15);
+        background-size: cover;
+    }
+
+    .skill-data {
+        border-color: rgb(204, 126, 37);
+        background-image: linear-gradient(0deg, rgba(184, 91, 48, 0.74) 0%, rgba(153, 137, 100, 0.3) 100%);
+        grid-column: 4 / 5;
+        grid-row: 2 / 3;
+        background-size: cover;
+        color: aliceblue;
+    }
+
+    .photo-granada{
+        background-image: linear-gradient(0deg, rgba(219, 132, 17, 0.54) 0%, rgba(95, 73, 22, 0.06) 100%), url(/Portfolio/Photos/Granada.jpg);
+        grid-row: 3 / 4;
+        grid-column: 4 / 5;
+        border-color: rgb(158, 125, 15);
+        background-size: cover;
+    }
+
+    .another-profesional-data {
+        border-color: rgb(187, 105, 38);
+        background-image: linear-gradient(0deg, rgba(197, 117, 12, 0.74) 0%, rgba(153, 137, 100, 0.3) 100%);
+        background-size: cover;
+        grid-column: 2 / 4;
+        grid-row: 3 / 4;
+        color: aliceblue;
+    }
+
+    .photo-granada{
+        background-image: linear-gradient(0deg, rgba(197, 117, 12, 0.74) 0%, rgba(153, 137, 100, 0.3) 100%), url(/Portfolio/Photos/Granada.jpg);
+        grid-row: 3 / 4;
+        grid-column: 4 / 5;
+        border-color: rgb(158, 125, 15);
+        background-size: cover;
+    }
+
+    & h2 {
+        font-weight: bold;
+        text-transform: uppercase;
+        color: rgb(228, 168, 89);
+    }
+}
